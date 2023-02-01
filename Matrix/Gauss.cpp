@@ -34,12 +34,11 @@ int main()
             }
         }
     }
-    //upper
+    //upper triangular
     for(int diag = 0 ; diag < matrix.size() ; diag++)
     {
         for(int row = diag - 1 ; row >= 0 ; row--)
         {
-            // cout<<matrix[row][diag]<<"\n";
             float ratio = matrix[row][diag] / matrix[diag][diag];
             for(int col = 0 ; col < matrix[0].size() ; col++)
             {
